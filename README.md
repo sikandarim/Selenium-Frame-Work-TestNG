@@ -1,21 +1,15 @@
-Test Automation Framework using Selenium Java and TestNG
-💥Important: when clone this repo, you should select 'Recursive' to get all submodules
-🔆 SOME FEATURES IN FRAMEWORK
+Hybrid test automation framework based on:
+  - Selenium WebDriver
+  - TestNG 
+  - Maven 
+  - ExtentReports
+  - Log4j2 
+ 
+  
+With this framework, automation engineers can get started quickly on automating their tests rather than wasting time on designing and maintaining the framework. New features are being added to the framework constantky. My intent in designing this framework is to make it easy to setup and start quickly with selenium. But at the same time, I have tried to make it extendable, readable and maintainable.  Users can clone and adapt the framework according to their respective requirements if needed.
 
-Run the parallel test case
-Read Config from Properties file
-Extent Report
-Allure Report
-Send Mail after the run test (Report information and HTML file attachment)
-Write Log to file
-Record video and Screenshot test case
-Read data test from Excel file (xlsx, csv, json,...)
-Base function in the package: utils, helpers
-Read data test from Json file
-Main Keyword: WebUI (call common function)
-Sample test all function in WebUI keyword
-Send message/report to Telegram Bot
-Run Selenium Grid (remote)
-Use DataFaker and JavaFaker to generate data
-Retry Failed Test in TestNG with IRetryAnalyzer and IAnnotationTransformer
-]\
+Following patterns are followed in this framework (some of which shall be altered according to the usability)
+  - Page Object Model is followed which is golden rule for test automation. Page Factory is not used in finding the elements but the page elements are segregated to separate classes and used the respective page classes. 
+  - Factory pattern is used in initialising the Webdriver for different browsers, hence it can be extended to add any new browser driver supported by Selenium. 
+  - Decorated driver and element are used in the entire framework which makes the logging easy. Only a few actions are added now which can be updated according to individual requirements.
+  - Fluent pattern is used in the sample tests to enhance the readability of the tests which can be altered according to  the taste of the user.
