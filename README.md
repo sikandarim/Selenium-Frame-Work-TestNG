@@ -1,30 +1,21 @@
-📄 Project Title:
+Test Automation Framework using Selenium Java and TestNG
+💥Important: when clone this repo, you should select 'Recursive' to get all submodules
+🔆 SOME FEATURES IN FRAMEWORK
 
-Page Object Model Automation Framework
-
-📋 Description
-
-A scalable and maintainable test automation framework built using the Page Object Model (POM) design pattern. Designed for efficient testing of web/mobile applications.
-
-🚀 Technologies Used:
-
-Programming Language: Java 
-Testing Framework: TestNG 
-Automation Tools: Selenium / Appium 
-Build Tool:  Maven 
-Reporting:Allure 
-
-🏗️ Project Structure:
-
-/src/test/java
-    /base      # Base classes ()
-    /pages     # Page Object classes
-    /tests     # Test classes
-    /utils     # Utilities (Helpers, Data Readers, Configs)
-
-🧪 How to Run Tests:
-
-Command line:
-mvn clean test
-From IDE:
-Right-click on the testng.xml or any Test class -> Run
+Run the parallel test case
+Read Config from Properties file
+Extent Report
+Allure Report
+Send Mail after the run test (Report information and HTML file attachment)
+Write Log to file
+Record video and Screenshot test case
+Read data test from Excel file (xlsx, csv, json,...)
+Base function in the package: utils, helpers
+Read data test from Json file
+Main Keyword: WebUI (call common function)
+Sample test all function in WebUI keyword
+Send message/report to Telegram Bot
+Run Selenium Grid (remote)
+Use DataFaker and JavaFaker to generate data
+Retry Failed Test in TestNG with IRetryAnalyzer and IAnnotationTransformer
+]\
